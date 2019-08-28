@@ -4,7 +4,7 @@ function init() {
     $(".box-inserisci i").click(putitems);
     readitems();
     $(document).on("click","i.delete",deleteitems);
-    
+
 
 }
 
@@ -41,10 +41,14 @@ function printitems(itemslist){
     obj.append(html);
 
   }
+
 }
 
-function deleteitems(){
 
+function deleteitems(){
+  var itemselementlength=$("p.number-in-shopping-cart").text();
+  console.log(itemselementlength);
+  $("p.number-in-shopping-cart").html(itemselementlength-1);
   var itemsdeleteid=$(this).parent().attr("rifid");
   var itemsdelete=$(this).parent();
   console.log(itemsdeleteid);
