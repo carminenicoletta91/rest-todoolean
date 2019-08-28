@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  font-family: 'Lato', sans-serif;
+
+  user-select: none;
+  list-style: none;
+}
+.id-app{
+  display: flex;
+  position:relative;
+}
+.id-app i{
+  align-self:flex-end;
+  font-size:40px;
+  margin-bottom:9.4px;
+}
+.id-app p.number-in-shopping-cart{
+  position: absolute;
+  right:0px;
+  top:-19px;
+  border:1px solid purple;
+  border-radius: 50%;
+  padding:3px 6px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+
+  padding: 50px 25px;
+
+  overflow: hidden;
+}
+.container h1{
+  font-size:45px;
+  color:black;
+}
+.box-items{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top:50px;
+}
+.item{
+  position: relative;
+  width:200px;
+  height:150px;
+  background-color:rgba(46, 49, 49, 0.2);
+  margin:10px 10px;
+}
+.delete{
+  position: absolute;
+  font-size:20px;
+  top:10px;
+  right:5px;
+  /* padding:5px; */
+  /* border-radius:50%; */
+  /* background-color:black; */
+  color:black;
+}
+.text-items{
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+}
+.box-inserisci{
+  /* margin-left: 40px; */
+  margin-top:30px;
+   position:relative;
+  width:200px;
+}
+.box-inserisci input{
+  /* position: absolute; */
+  padding:10px;
+  background-color:purple;
+  border:0;
+  color:white;
+  width:100%;
+}
+.box-inserisci i{
+  position: absolute;
+  right: 5px;
+  top:10px;
+}
